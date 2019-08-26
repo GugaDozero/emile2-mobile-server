@@ -1,0 +1,1 @@
+var=1; cat qtconbr.csv | while read LINE; do echo "insert into users values ($var, '`echo $LINE | cut -d";" -f1`', '`echo $LINE | cut -d";" -f2` `echo $LINE | cut -d";" -f3`', null);"; var=$((var + 1)); done > carga.sql

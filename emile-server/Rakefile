@@ -1,0 +1,2 @@
+require './emilegestaoacademica'
+require 'sinatra/activerecord/rake'
